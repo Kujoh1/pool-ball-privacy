@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoolBall - Das ultimative Physik-Puzzle für iPhone</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Header */
+        .header { background: linear-gradient(135deg, #1E90FF 0%, #4169E1 100%); color: white; padding: 60px 0; text-align: center; }
+        .header h1 { font-size: 3.5rem; font-weight: 700; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .header p { font-size: 1.3rem; margin-bottom: 30px; opacity: 0.9; }
+        .download-btn { display: inline-block; background: #000; color: white; padding: 15px 30px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: transform 0.3s ease; }
+        .download-btn:hover { transform: translateY(-2px); }
+        
+        /* Container */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Features Section */
+        .features { padding: 80px 0; background: #f8f9fa; }
+        .features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 50px; color: #1E90FF; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .feature-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease; }
+        .feature-card:hover { transform: translateY(-5px); }
+        .feature-icon { font-size: 3rem; margin-bottom: 20px; }
+        .feature-card h3 { font-size: 1.4rem; margin-bottom: 15px; color: #1E90FF; }
+        
+        /* Screenshots Section */
+        .screenshots { padding: 80px 0; }
+        .screenshots h2 { text-align: center; font-size: 2.5rem; margin-bottom: 50px; color: #1E90FF; }
+        .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; }
+        .screenshot { background: #f0f0f0; border-radius: 20px; padding: 20px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .screenshot-placeholder { width: 100%; height: 400px; background: linear-gradient(45deg, #1E90FF, #4169E1); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; margin-bottom: 15px; }
+        
+        /* Game Info */
+        .game-info { padding: 80px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .game-info h2 { text-align: center; font-size: 2.5rem; margin-bottom: 50px; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .info-item { text-align: center; }
+        .info-number { font-size: 3rem; font-weight: 700; margin-bottom: 10px; }
+        .info-text { font-size: 1.2rem; opacity: 0.9; }
+        
+        /* CTA Section */
+        .cta { padding: 80px 0; background: #1E90FF; color: white; text-align: center; }
+        .cta h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        .cta p { font-size: 1.3rem; margin-bottom: 30px; opacity: 0.9; }
+        
+        /* Footer */
+        .footer { background: #333; color: white; padding: 40px 0; text-align: center; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: #1E90FF; text-decoration: none; margin: 0 15px; }
+        .footer-links a:hover { text-decoration: underline; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2.5rem; }
+            .header p { font-size: 1.1rem; }
+            .features h2, .screenshots h2, .game-info h2, .cta h2 { font-size: 2rem; }
+            .screenshot-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <section class="header">
+        <div class="container">
+            <h1>🎯 PoolBall</h1>
+            <p>Das ultimative Physik-Puzzle für iPhone</p>
+            <p>Meistere 200+ Level mit realistischer Ballphysik!</p>
+            <a href="#" class="download-btn">📱 Jetzt im App Store downloaden</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2>Warum PoolBall?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>200+ Einzigartige Level</h3>
+                    <p>Von einfachen Anfänger-Herausforderungen bis hin zu kniffligen Meister-Leveln. Jedes Level ist handgefertigt und bietet eine einzigartige Physik-Herausforderung.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Realistische Physik</h3>
+                    <p>Erleben Sie authentische Ballphysik mit präzisen Kollisionen, Reibung und Schwerkraft. Jeder Schuss fühlt sich echt an!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Power-ups & Extras</h3>
+                    <p>Sammeln Sie mächtige Power-ups wie Extra-Bälle, Präzisions-Hilfen und Kraft-Boosts um auch die schwierigsten Level zu meistern.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Highscore-System</h3>
+                    <p>Schaffen Sie jedes Level mit möglichst wenigen Schüssen und verbessern Sie kontinuierlich Ihre Bestzeiten.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Komplett Offline</h3>
+                    <p>Spielen Sie jederzeit und überall - keine Internetverbindung erforderlich. Perfekt für unterwegs!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Atmosphärische Sounds</h3>
+                    <p>Genießen Sie hochwertige Soundeffekte und Musik, die perfekt zur Physik-Action passen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="screenshots">
+        <div class="container">
+            <h2>Gameplay Screenshots</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 30px;">Erleben Sie die beeindruckende Grafik und das intuitive Gameplay</p>
+            <div class="screenshot-grid">
+                <div class="screenshot">
+                    <div class="screenshot-placeholder">
+                        🎮 Hauptmenü
+                    </div>
+                    <h3>Elegantes Hauptmenü</h3>
+                    <p>Sauberes Design mit einfacher Navigation</p>
+                </div>
+                <div class="screenshot">
+                    <div class="screenshot-placeholder">
+                        🎯 Gameplay
+                    </div>
+                    <h3>Präzises Zielsystem</h3>
+                    <p>Intuitive Touch-Steuerung für perfekte Schüsse</p>
+                </div>
+                <div class="screenshot">
+                    <div class="screenshot-placeholder">
+                        📊 Level-Auswahl
+                    </div>
+                    <h3>Level-Übersicht</h3>
+                    <p>Behalten Sie Ihren Fortschritt im Blick</p>
+                </div>
+                <div class="screenshot">
+                    <div class="screenshot-placeholder">
+                        🚀 Power-ups
+                    </div>
+                    <h3>Mächtige Power-ups</h3>
+                    <p>Strategisch einsetzen für maximalen Erfolg</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Info -->
+    <section class="game-info">
+        <div class="container">
+            <h2>Beeindruckende Zahlen</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-number">200+</div>
+                    <div class="info-text">Einzigartige Level</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-number">100%</div>
+                    <div class="info-text">Offline spielbar</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-number">0€</div>
+                    <div class="info-text">Kostenlos</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-number">4+</div>
+                    <div class="info-text">Altersfreigabe</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Bereit für die Herausforderung?</h2>
+            <p>Laden Sie PoolBall jetzt kostenlos herunter und beweisen Sie Ihr Können!</p>
+            <a href="#" class="download-btn">🍎 Jetzt im App Store downloaden</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy_policy.html">Datenschutz</a>
+                <a href="support.html">Support</a>
+                <a href="mailto:johannes_kuch@yahoo.com">Kontakt</a>
+            </div>
+            <p>&copy; 2025 PoolBall. Entwickelt mit ❤️ für iPhone.</p>
+        </div>
+    </footer>
+</body>
+</html> 
